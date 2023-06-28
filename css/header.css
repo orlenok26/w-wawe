@@ -1415,7 +1415,7 @@ transition-property: background-image;
 
   .enter-window {
       max-width: 256px;
-      padding: 20px;
+      padding: 10px;
       max-height: 453px;
   }
 
