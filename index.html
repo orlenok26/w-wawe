@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.svg" type="img/svg+xml">
+        <link rel="stylesheet" href="css/choices.min.css">
+        <link rel="stylesheet" href="css/just-validate.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/general_style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/hero.css">
+        <link rel="stylesheet" href="css/podcast.css">
+        <link rel="stylesheet" href="css/broadcast.css">
+        <link rel="stylesheet" href="css/guest.css">
+        <link rel="stylesheet" href="css/playlist.css">
+        <link rel="stylesheet" href="css/adv.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <script defer src="js/choices.min.js"></script>
+        <script defer src="js/select.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script defer src="js/scroll.js"></script>
+        <script defer src="js/podcast.js"></script>
+        <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script defer src="js/accord.js"></script>
+        <script defer src="js/tabs.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script defer src="js/swipe.js"></script>
+        <script defer src="js/just-validate.min.js"></script>
+        <script defer src="js/inputmask.min.js"></script>
+        <script defer src="js/input-mask.js"></script>
+        <script defer src="js/enter.js"></script>
+        <script defer src="js/burger.js"></script>
+        <script defer src="js/efir.js"></script>
+        <script defer src="js/search.js"></script>
+        <script defer src="js/like.js"></script>
+        <script defer src="js/play.js"></script>
+        <!-- <script defer src="js/swiper-btn.js"></script> -->
+
+        <title>W-Wave</title>
+    </head>
+    <body class="w-wawe">
+        <header class="header">
+            <div class="header__menu">
+                <div class="logo-mobile">
+                    <div class="container container_mobile">
+                        <img class="logo-mobile__img img" src="img/logo_1024.svg" alt="Логотип компании">
+                        <button class="logo-1024 logo-1024_link btn"> Вход </button>
+                    </div>
+                </div>
+                <div class="container container_burger">
+                    <button class="menu-burger btn" aria-label="Открыть меню">
+                        <span></span>
+                    </button>
+                    <div class="menu">
+                        <img class="menu__logo img" src="img/logo.svg" alt="Логотип компании">
+                        <nav id="menu" class="menu__nav">
+                            <ul class="menu__nav-list ul">
+                                <li class="menu__burger-list">
+                                    <span></span>
+                                </li>
+                                <li class="menu__nav-item">
+                                    <a href="#podcast" class="t-d menu__nav-link">
+                                        Подкасты
+                                    </a>
+                                </li>
+                                <li class="menu__nav-item">
+                                    <a href="#broadcast" class="menu__nav-link t-d">
+                                        Передачи
+                                    </a>
+                                </li>
+                                <li class="menu__nav-item">
+                                    <a href="#guest" class="menu__nav-link t-d">
+                                        Гости
+                                    </a>
+                                </li>
+                                <li class="menu__nav-item">
+                                    <a href="#playlist" class="menu__nav-link t-d">
+                                        Плейлисты
+                                    </a>
+                                </li>
+                                <li class="menu__nav-item size-mobile">
+                                    <a href="#about" class="menu__nav-link t-d">
+                                        О нас
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                            <div class="menu__functional">
+                                <form  class="menu__functional-serch-form" name="menu___form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                                    <input type="search" class="menu__functional-search-input" id="search" placeholder="Поиск по сайту">
+                                </form>
+                                <button class="menu__functional-search-btn btn" aria-label="Найти"></button>
+                                <button class="menu__functional-btn btn"> Вход </button>
+                            </div>
+                        </div>
+                    </div>
+                <div  id="enter" class="menu-enter">
+                    <div class="container enter-window">
+                        <div class="enter-window__article">
+                            <div class="enter-window__start">
+                                <h2 class="enter-window__header text">Вход</h2>
+                                <a href="#" class="enter-window__article-out t-d" aria-label="Выход"></a>
+                            </div>
+                            <p class="enter-window__descrition text">Если у вас ещё нет аккаунта,</p>
+                            <a href="" class="enter-window__link-registration t-d" >зарегистрируйтесь</a>
+                        </div>
+                        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST" class="enter-window__form">
+                            <label>
+                                <input type="text" name="login" placeholder="Логин" class="enter-window__form-login">
+                            </label>
+                            <label>
+                                <input type="text" name="pswd" placeholder="Пароль" class="enter-window__form-pswd">
+                            </label>
+                            <button type="submit" class="enter-window__form-btn btn">Войти</button>
+                        </form>
+                        <p class="enter-window__text text">Войти с помощью:</p>
+                        <div class="enter-window__icons">
+                            <ul class="enter-window__icons-list ul">
+                                <li class="enter-window__icons-item">
+                                    <a href="" class="enter-window__icons-link icon-fb t-d" title="Войти с помощью Facebook"></a>
+                                </li>
+                                <li class="enter-window__icons-item">
+                                    <a href="" class="enter-window__icons-link icon-vk t-d" title="Войти с помощью Вконтакте"></a>
+                                </li>
+                                <li class="enter-window__icons-item">
+                                    <a href="" class="enter-window__icons-link icon-gm t-d" title="Войти с помощью Gmail"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__lower-menu">
+                <div class="container container_lower-menu">
+                    <nav id="lower__menu" class="lower-menu">
+                        <ul class="lower-menu__list ul">
+                            <li class="lower-menu__item">
+                                <a href="" class="lower-menu__link t-d">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="lower-menu__item">
+                                <a href="" class="lower-menu__link t-d">
+                                    Блоги
+                                </a>
+                            </li>
+                            <li class="lower-menu__item">
+                                <a href="" class="lower-menu__link t-d">
+                                    Топы
+                                </a>
+                            </li>
+                            <li class="lower-menu__item">
+                                <a href="" class="lower-menu__link t-d">
+                                    Опросы
+                                </a>
+                            </li>
+                            <li class="lower-menu__item">
+                                <a href="" class="lower-menu__link t-d">
+                                    Рейтинги
+                                </a>
+                            </li>
+                            <li class="lower-menu__item">
+                                <a href="" class="lower-menu__link t-d">
+                                    Реклама
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="btn-efir">
+                        <button class="btn-efir__btn4 btn">Что в эфире?</button>
+                        <div class="btn-efir__btn-grp">
+                            <div class="btn-efir__earlier">
+                                <button class="btn-efir__btn1 btn" aria-label="Ранее в эфире 'Музыка'"></button>
+                                <div class="btn-efir__info">
+                                    <p class="btn-efir__text text">Ранее в эфире</p>
+                                    <p class="btn-efir__name text">«Музыка»</p>
+                                </div>
+                            </div>
+                            <div class="btn-efir__now">
+                                <button class="btn-efir__btn2 btn" aria-label="Сейчас в эфире 'Как так?'"></button>
+                                <div class="btn-efir__info2">
+                                    <p class="btn-efir__text text">Сейчас в эфире</p>
+                                    <p class="btn-efir__name text">«Как так?»</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-radio btn" aria-label="Включить радио"></button>
+                    <img src="img/age.png" class="age" alt="Возрастная категория 12+">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__discription">
+                        <div class="hero-header">
+                            <h1 class="hero__header-text text">
+                                Радио
+                            </h1>
+                            <p class="hero__header-text hero__header-text_wawe text">W-Wawe</p>
+                        </div>
+                        <p class="hero__text text">
+                            Привет, на связи W-Wawe! Раньше мы были изданием,
+                            а теперь пробуем себя в разоворном жанре. Говорим
+                            о музыке, политике, истории, науке и культуре.
+                            Здесь, помимо прямого эфира — архив передач и многое
+                            другое:)
+                        </p>
+                        <a href="" class="hero__link t-d">Слушать эфир</a>
+                    </div>
+                    <picture class="hero__pictures">
+                        <source media="(max-width: 1310px)" srcset="img/1024/microphone_1024.png">
+                        <img src="img/microphone.png" alt="Микрофон" class="img">
+                    </picture>
+                </div>
+            </section>
+            <section id="podcast" class="podcast">
+                <div class="container">
+                    <h2 class="podcast__header text">Подкасты</h2>
+                    <ul class="podcast__card-list ul">
+                        <li class="podcast__card-item date1">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast1.png">
+                                <img src="img/podcast1.png" class="podcast__card-img" alt="Европа. XIX век">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            15:43
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Европа. XIX век
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Дмитрий Гутенберг
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Европа.XIX век"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        258
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">104</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">68</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date2">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast2.png">
+                                <img src="img/podcast5.png" class="podcast__card-img" alt="О музыке">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            5:32
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            О музыке
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Дмитрий Гутенберг
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст О музыке"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        207
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">34</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">18</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date3">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast3.png">
+                                <img src="img/podcast2.png" class="podcast__card-img" alt="Люди сегодня">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            8:54
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Люди сегодня
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Анна Васильева
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label=" Слушать подкаст Люди сегодня"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        104
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">54</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">42</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date4">
+                            <picture>
+                                <source media="(max-width:380px )" srcset="img/mobile/podcast4.png">
+                                <img src="img/podcast6.png" class="podcast__card-img" alt="Хэллоу, Африка!">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            9:04
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Хэллоу, Африка!
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Пётр Дмитриевский
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Хэллоу, Африка"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li
+                                        class="podcast__action-item play play"
+                                    >
+                                        87
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">44</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">5</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date5 podcast__card-item_yet">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast1.png">
+                                <img src="img/podcast3.png" class="podcast__card-img" alt="Обо всём">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            7:03
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Обо всём
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Пётр Дмитриевский
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Обо всем"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        64
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">30</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">8</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date6 podcast__card-item_yet">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast2.png">
+                                <img src="img/podcast7.png" class="podcast__card-img" alt="Физика цвета">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            9:15
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Физика цвета
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Татьяна Флеганова
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Физика цвета"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        58
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">29</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">14</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item  date7 podcast__card-item_yet">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast3.png">
+                                <img src="img/podcast4.png" class="podcast__card-img" alt="Источник звука">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            16:04
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Источник звука
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Пётр Дмитриевский
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Источник звука"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        55
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">20</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">12</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date8 podcast__card-item_yet">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast4.png">
+                                <img src="img/podcast8.png" class="podcast__card-img" alt="Правила этикета">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            6:55
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Правила этикета
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Татьяна Флеганова
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Правила этикета"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        24
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">54</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">42</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                    </ul>
+                    <ul class="podcast__card-list podcast__card-list_yet ul">
+                        <li class="podcast__card-item date1">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast1.png">
+                                <img src="img/podcast1.png" class="podcast__card-img" alt="Европа. XIX век">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            15:43
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Европа. XIX век
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Дмитрий Гутенберг
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Европа.XIX век"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        258
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">104</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">68</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date2">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast2.png">
+                                <img src="img/podcast5.png" class="podcast__card-img" alt="О музыке">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            5:32
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            О музыке
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Дмитрий Гутенберг
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст О музыке"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        207
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">34</button> 34
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">18</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date3">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast3.png">
+                                <img src="img/podcast2.png" class="podcast__card-img" alt="Люди сегодня">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            8:54
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Люди сегодня
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Анна Васильева
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Люди сегодня"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        104
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">54</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">42</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li class="podcast__card-item date4">
+                            <picture>
+                                <source media="(max-width: 380px )" srcset="img/mobile/podcast4.png">
+                                <img src="img/podcast6.png" class="podcast__card-img" alt="Хэллоу, Африка!">
+                            </picture>
+                            <article class="podcast__card-discription">
+                                <div class="podcast-info">
+                                    <div class="podcast-info__text">
+                                        <p class="podcast-info__time text">
+                                            9:04
+                                        </p>
+                                        <h3 class="podcast-info__header text">
+                                            Хэллоу, Африка!
+                                        </h3>
+                                        <p class="podcast-info__author text">
+                                            Пётр Дмитриевский
+                                        </p>
+                                    </div>
+                                    <button class="podcast__btn-play btn" aria-label="Слушать подкаст Хэллоу, Африка"></button>
+                                </div>
+                                <ul class="podcast__actions-list ul">
+                                    <li class="podcast__action-item play">
+                                        87
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="like btn" aria-label="Поставить лайк">44</button>
+                                    </li>
+                                    <li class="podcast__action-item">
+                                        <button class="social btn" aria-label="Поделиться подскастом">5</button>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                    </ul>
+                    <button class="podcast__btn btn" id="podcast_card">Ещё подкасты</button>
+                    <button class="podcast__btn podcast__btn_exit btn">Свернуть</button>
+                </div>
+            </section>
+            <section class="broadcast" id="broadcast">
+                <div class="container broadcast__container">
+                    <div class="broadcast__description">
+                        <div class="broadcast__info">
+                            <h2 class="broadcast__header text">Передачи</h2>
+                            <p class="broadcast__title text">Автор:</p>
+                            <div class="broadcast__select select">
+                                <select name="select" class="js-choice" aria-label="Выбор автора">
+                                    <option class="broadcast__choice" value="" data-path="44">
+                                        Дмитрий Гутенберг
+                                    </option>
+                                    <option class="broadcast__choice" value="Татьяна Флеганова" data-path="45">
+                                        Татьяна Флеганова
+                                    </option>
+                                    <option class="broadcast__choice" value="Анна Васильева" data-path="46">
+                                        Анна Васильева
+                                    </option>
+                                    <option class="broadcast__choice" value="Пётр Дмитриевский" data-path="47">
+                                        Пётр Дмитриевский
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="broadcast__card ul">
+                            <li class="broadcast__card-item">
+                                <picture>
+                                    <source media="(max-width: 480px)" srcset="img/mobile/image1.png">
+                                    <img src="img/broadcast_d1.png" class="broadcast__card-img" alt="О людях и книгах">
+                                </picture>
+                                <div class="broadcast__card-info">
+                                    <div class="broadcast__card-discription">
+                                        <h3 class="broadcast__card-header text">
+                                            О людях и книгах
+                                        </h3>
+                                        <p class="broadcast__card-text text">
+                                            Анонсируется отдельно
+                                        </p>
+                                    </div>
+                                    <a href="" class="broadcast__card-link t-d" aria-label="Подробнее о людях и книгах">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="broadcast__card-item">
+                                <picture>
+                                    <source media="(max-width: 480px)" srcset="img/mobile/image2.png">
+                                    <img src="img/broadcast_d2.png" class="broadcast__card-img" alt="Графомания">
+                                </picture>
+                                <div class="broadcast__card-info">
+                                    <div class="broadcast__card-discription">
+                                      <h3 class="broadcast__card-header text">
+                                          Графомания td
+                                      </h3>
+                                      <p class="broadcast__card-text text">
+                                          По понедельникам в 10:00
+                                      </p>
+                                    </div>
+                                    <a href="" class="broadcast__card-link t-d" aria-label="Подробнее Грамофония td">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="broadcast__card-item">
+                                <picture>
+                                    <source media="(max-width: 480px)" srcset="img/mobile/image3.png">
+                                    <img src="img/broadcast_d3.png" class="broadcast__card-img" alt="Не Рим, не Троя">
+                                </picture>
+                                <div class="broadcast__card-info">
+                                    <div class="broadcast__card-discription">
+                                      <h3 class="broadcast__card-header text">
+                                          Не Рим, не Троя
+                                      </h3>
+                                      <p class="broadcast__card-text text">
+                                          По вторникам в 12:00
+                                      </p>
+                                    </div>
+                                    <a href="" class="broadcast__card-link t-d" aria-label="Подробнее Не Рим, не Троя">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="broadcast__card-item">
+                                <picture>
+                                    <source media="(max-width: 480px)" srcset="img/mobile/image4.png">
+                                    <img src="img/broadcast_d4.png" class="broadcast__card-img" alt="Эрудит">
+                                </picture>
+                                <div class="broadcast__card-info">
+                                    <div class="broadcast__card-discription">
+                                        <h3 class="broadcast__card-header text">
+                                            Эрудит
+                                        </h3>
+                                        <p class="broadcast__card-text text">
+                                            По пятницам в 17:00
+                                        </p>
+                                    </div>
+                                    <a href="" class="broadcast__card-link t-d" aria-label="Подробнее Эрудит">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="broadcast__card-item">
+                                <picture>
+                                    <source media="(max-width: 480px)" srcset="img/mobile/image5.png">
+                                    <img src="img/broadcast_d5.png" class="broadcast__card-img" alt="Тонкости эпох">
+                                </picture>
+                                <div class="broadcast__card-info">
+                                    <div class="broadcast__card-discription">
+                                        <h3 class="broadcast__card-header text">
+                                            Тонкости эпох
+                                        </h3>
+                                        <p class="broadcast__card-text text">
+                                            По субботам в 10:00
+                                        </p>
+                                    </div>
+                                    <a href="" class="broadcast__card-link t-d" aria-label="Подробнее Тонкости эпох">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="broadcast__card-item">
+                                <picture>
+                                    <source media="(max-width: 480px)" srcset="img/mobile/image6.png">
+                                    <img src="img/broadcast_d6.png" class="broadcast__card-img" alt="Живые мысли">
+                                </picture>
+                                <div class="broadcast__card-info">
+                                    <div class="broadcast__card-discription">
+                                        <h3 class="broadcast__card-header text">
+                                            Живые мысли
+                                        </h3>
+                                        <p class="broadcast__card-text text">
+                                            По воскресеньям в 15:30
+                                        </p>
+                                    </div>
+                                    <a href="" class="broadcast__card-link t-d" aria-label="Подробнее Живые мысли">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="broadcast__archiv">
+                        <picture class="broadcast__archiv-img">
+                            <source media="(max-width: 480px)" srcset="img/mobile/mic.png">
+                            <img src="img/mic.png" alt="Микрофон" class="img">
+                        </picture>
+                        <div class="broadcast__archiv-links">
+                            <a href="" class="broadcast__archiv-link t-d">Архив</a>
+                            <p class="broadcast__archiv-text text">
+                                В архив попадают все передачи, которые
+                                вы пропустили! Enjoy:)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="guest" id="guest-all">
+                <div class="container">
+                    <h2 class="guest__header text">Гости</h2>
+                    <p class="guest__article text">У нас бывают</p>
+                    <p class="guest__text text">
+                        Блогеры, арт-критики и деятели искусства, музыканты,
+                        молодые учёные и люди науки, историки, филологи и много
+                        других интересных гостей!
+                    </p>
+                    <div class="guest__info">
+                        <div class="guest__acc acc"  id="guest">
+                            <ul class="guest__acc-list ul">
+                                <li class="guest__acc-item">
+                                    <h3 class="guest__acc-btn text">
+                                        <span class="guest__acc-header">Блогеры</span>
+                                    </h3>
+                                    <div class="guest__links-blog blog">
+                                        <div class="guest__author-gr">
+                                            <ol class="guest__author ol">
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn scroll1 btn" type="button" data-path="1">
+                                                        Сергей Денисов
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="2">
+                                                        Матвей Мечников
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="3" >
+                                                        Константин Прусино
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="4">
+                                                        Иван Калитников
+                                                    </button>
+                                                </li>
+                                            </ol>
+                                            <ol class="guest__author ol">
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="5">
+                                                        Евгений Войновский
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button  class="guest__author-btn guest__author-btn_active scroll2 btn" type="button" data-path="6">
+                                                        Ольга Мартынова
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="7">
+                                                        Дмитрий Михалок
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="8">
+                                                        Пётр Пиотровский
+                                                    </button>
+                                                </li>
+                                            </ol>
+                                            <ol class="guest__author ol">
+                                                <li class="guest__author-name">
+                                                    <button  class="guest__author-btn btn" type="button" data-path="9">
+                                                        Олег Свиридовский
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="10">
+                                                        Владислав Кауперс
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="11">
+                                                        Михаил Пожитников
+                                                    </button>
+                                                </li>
+                                                <li class="guest__author-name">
+                                                    <button class="guest__author-btn btn" type="button" data-path="12">
+                                                        Георгий Полуян
+                                                    </button>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <ol class="guest__author guest__author-gr1 ol">
+                                            <li class="guest__author-name guest__author-name_gr1">
+                                                <button class="guest__author-btn btn" type="button" data-path="13">
+                                                    Денис Тельман
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name guest__author-name_gr1">
+                                                <button class="guest__author-btn btn" type="button" data-path="14">
+                                                    Юрий Горин
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name guest__author-name_gr1">
+                                                <button class="guest__author-btn btn" type="button" data-path="15">
+                                                    Максим Сергеев
+                                                </button>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <!-- мобилка -->
+                                    <div class="guest__links-blog-mobile blog">
+                                      <ul class="guest__author-gr ul">
+                                          <li class="guest__author">
+                                              <button class="guest__author-btn scroll1 btn" type="button" data-path="1">
+                                                  Сергей Денисов
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="2">
+                                                  Матвей Мечников
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="3" >
+                                                  Константин Прусино
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="4">
+                                                  Иван Калитников
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="13">
+                                                  Денис Тельман
+                                              </button>
+                                              <button  class="guest__author-btn btn" type="button" data-path="9">
+                                                  Олег Свиридовский
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="11">
+                                                Михаил Пожитников
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="15">
+                                                  Максим Сергеев
+                                              </button>
+                                          </li>
+                                          <li class="guest__author">
+                                              <button class="guest__author-btn btn" type="button" data-path="5">
+                                                  Евгений Войновский
+                                              </button>
+                                              <button  class="guest__author-btn guest__author-btn_active scroll2 btn" type="button" data-path="6">
+                                                  Ольга Мартынова
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="7">
+                                                  Дмитрий Михалок
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="8">
+                                                  Пётр Пиотровский
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="14">
+                                                Юрий Горин
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="10">
+                                                Владислав Кауперс
+                                              </button>
+                                              <button class="guest__author-btn btn" type="button" data-path="12">
+                                                Георгий Полуян
+                                              </button>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </li>
+                                <li class="guest__acc-item">
+                                    <h3 class="guest__acc-btn text">
+                                        <span class="guest__acc-header">Арт-критики</span>
+                                    </h3>
+                                    <div class="guest__links-art">
+                                        <ol class="guest__author ol">
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="16">
+                                                    Иван Орлов
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="17">
+                                                    Татьяна Смолкина
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="18">
+                                                    Сергей Смолкин
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="19">
+                                                    Татьяна Чертищева
+                                                </button>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li class="guest__acc-item">
+                                    <h3 class="guest__acc-btn text">
+                                        <span class="guest__acc-header">Художники</span>
+                                    </h3>
+                                    <div class="guest__links-artist">
+                                        <ol class="guest__author ol">
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="20">
+                                                    Виктория Беляева
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="21">
+                                                    Ольга Никитина
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="22">
+                                                    Лилия Ким
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="23">
+                                                    Лукьян Орлов
+                                                </button>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li class="guest__acc-item">
+                                    <h3 class="guest__acc-btn text">
+                                        <span class="guest__acc-header">Люди науки</span>
+                                    </h3>
+                                    <div class="guest__links-science">
+                                        <ol class="guest__author ol">
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="24">
+                                                    Тея Ленкина
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="25">
+                                                    Александра Мед
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="26">
+                                                    Кристина Швед
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="27">
+                                                    Светлана Метлякова
+                                                </button>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li class="guest__acc-item">
+                                    <h3 class="guest__acc-btn text">
+                                        <span class="guest__acc-header">Историки</span>
+                                    </h3>
+                                    <div class="guest__links-history">
+                                        <ol class="guest__author ol">
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="28">
+                                                    Юлия Маметьева
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="29">
+                                                    Алексей Никифоров
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="30">
+                                                    Пётр Сковородко
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="31">
+                                                    Игорь Олимпов
+                                                </button>
+                                            </li>
+                                        </ol>
+                                        <ol class="guest__author ol">
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="32">
+                                                    Евгений Ким
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="33">
+                                                    Максим Смольников
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="34">
+                                                    Светлана Пахомова
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="35">
+                                                    Александр Федоров
+                                                </button>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li class="guest__acc-item filologe">
+                                    <h3 class="guest__acc-btn text">
+                                        <span class="guest__acc-header">Филологи</span>
+                                    </h3>
+                                    <div class="guest__links-philologist">
+                                        <ol class="guest__author ol">
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="36">
+                                                    Леонид Павлов
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="37">
+                                                    Виктор Иванов
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="38">
+                                                    Сергей Есенин
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="39">
+                                                    Александр Блок
+                                                </button>
+                                            </li>
+                                        </ol>
+                                        <ol class="guest__author ol">
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="40">
+                                                    Александр Пушкин
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="41">
+                                                    Михаил Булгаков
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="42">
+                                                    Фёдор Достоевский
+                                                </button>
+                                            </li>
+                                            <li class="guest__author-name">
+                                                <button class="guest__author-btn btn" type="button" data-path="43">
+                                                    Елена Суздолова
+                                                </button>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="guest__info-author" id="guest-info">
+                            <div class="guest__author-info info1" data-target="1" id="guest1-info">
+                                <picture id="guest1">
+                                    <source media="(max-width: 992px)" srcset="img/768/guest_plug.png">
+                                    <source media="(max-width: 1310px)" srcset="img/1024/guest_plug.png">
+                                    <img class="guest__author-pictures img" src="img/guest_plug.png"  alt="Здесь будет фото гостя">
+                                </picture>
+                                <div class="guest__author-icon">
+                                    <a href="" class="guest__author-link insta t-d"></a>
+                                    <a href="" class="guest__author-link fb t-d"></a>
+                                    <a href="" class="guest__author-link twit t-d"></a>
+                                </div>
+                                <h3 class="guest__author-fio text">
+                                    Сергей Денисов
+                                </h3>
+                                <p class="guest__author-discr text">
+                                    Российский искусствовед, арт-критик, куратор
+                                    выставок, дизайнер, кандидат культурологии.
+                                    Арт-критик газеты «Коммерсантъ». Ведёт
+                                    активную блогерскую деятельность как куратор
+                                    музея «Гараж», коим является с 2016 года.
+                                </p>
+                                <a href="#" class="guest__author-efir t-d">Эфиры с гостем</a>
+                            </div>
+                            <div class="guest__author-info" data-target="2" id="guest2-info">
+                                <picture id="guest2">
+                                    <source media="(max-width: 992px)" srcset="img/768/guest_plug.png">
+                                    <source media="(max-width: 1310px)" srcset="img/1024/guest_plug.png">
+                                    <img class="guest__author-pictures img" src="img/guest_plug.png" alt="Здесь будет фото гостя">
+                                </picture>
+                                <div class="guest__author-icon">
+                                    <a href="" class="guest__author-link insta t-d"></a>
+                                    <a href="" class="guest__author-link fb t-d"></a>
+                                    <a href="" class="guest__author-link twit t-d"></a>
+                                </div>
+                                <h3 class="guest__author-fio text">
+                                    Матвей Мечников
+                                </h3>
+                                <p class="guest__author-discr text">
+                                    Российский искусствовед, арт-критик, куратор
+                                    выставок, дизайнер, кандидат культурологии.
+                                    Арт-критик газеты «Коммерсантъ». Ведёт
+                                    активную блогерскую деятельность как куратор
+                                    музея «Гараж», коим является с 2016 года.
+                                </p>
+                                <a href="" class="guest__author-efir t-d">
+                                    Эфиры с гостем
+                                </a>
+                            </div>
+                            <div class="guest__author-info guest__author-info_active info2" data-target="6" id="olga_martinova">
+                                <picture>
+                                    <source media="(max-width: 480px)" srcset="img/mobile/guest1.png">
+                                    <source media="(max-width: 992px)" srcset="img/768/guest1.png">
+                                    <source media="(max-width: 1310px )" srcset="img/1024/guest1.png">
+                                    <img class="guest__author-pictures img"  src="img/guest1.png" alt="Фотография Ольги Мартыновой">
+                                </picture>
+                                <div class="guest__author-icon">
+                                    <a href="" class="guest__author-link insta t-d" aria-label="Ссылка на Инстаграмм (запрещен на территории РФ)"></a>
+                                    <a href="" class="guest__author-link fb t-d" aria-label="Сылка на Фейсбук (запрещен на территории РФ)"></a>
+                                    <a href="" class="guest__author-link twit t-d" aria-label="Ссылка на Твиттер"></a>
+                                </div>
+                                <h3 class="guest__author-fio text">
+                                    Ольга Мартынова
+                                </h3>
+                                <p class="guest__author-discr text">
+                                    Российский искусствовед, арт-критик, куратор
+                                    выставок, дизайнер, кандидат культурологии.
+                                    Арт-критик газеты «Коммерсантъ». Ведёт
+                                    активную блогерскую деятельность как куратор
+                                    музея «Гараж», коим является с 2016 года.
+                                </p>
+                                <a href="" class="guest__author-efir t-d">
+                                    Эфиры с гостем
+                                </a>
+                            </div>
+                            <div class="guest__author-info" data-target="16" id="ivan_orlov">
+                                <picture>
+                                    <source media="(max-width: 480px)" srcset="img/mobile/guest_plug.png">
+                                    <source media="(max-width: 992px)" srcset="img/768/guest_plug.png">
+                                    <source media="(max-width: 1310px)" srcset="img/1024/guest_plug.png">
+                                    <img class="guest__author-pictures img" src="img/guest_plug.png" alt="Здесь будет фото гостя">
+                                </picture>
+                                <div class="guest__author-icon">
+                                    <a href="" class="guest__author-link insta t-d" aria-label="Ссылка на Инстаграмм (запрещен на территории РФ)"></a>
+                                    <a href="" class="guest__author-link fb t-d" aria-label="Сылка на Фейсбук (запрещен на территории РФ)"></a>
+                                    <a href="" class="guest__author-link twit t-d" aria-label="Ссылка на Твиттер"></a>
+                                </div>
+                                <h3 class="guest__author-fio text">Иван Орлов</h3>
+                                <p class="guest__author-discr text">
+                                    Известный арт-критик на всей планете Земля
+                                </p>
+                                <a href="" class="guest__author-efir t-d">
+                                    Эфиры с гостем
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="playlist" id="playlist">
+                <div class="container playlist__container">
+                    <div class="playlist__functional">
+                        <h2 class="playlist__header text">Плейлисты</h2>
+                        <p class="playlist__text text">Жанр</p>
+                        <div class="playlist__radio">
+                            <div class="playlist__radio-group1">
+                                <div class="playlist__radio-btn">
+                                    <input id="radio-1" type="radio" name="playlist" value="1" checked>
+                                    <label for="radio-1" tabindex="0">Постпанк</label>
+                                </div>
+                                <div class="playlist__radio-btn">
+                                    <input id="radio-2" type="radio" name="playlist" value="2">
+                                    <label for="radio-2" tabindex="0">Хардкор</label>
+                                </div>
+                                <div class="playlist__radio-btn">
+                                    <input id="radio-3" type="radio" name="playlist" value="3">
+                                    <label for="radio-3" tabindex="0">Панк-рок</label>
+                                </div>
+                                <div class="playlist__radio-btn">
+                                    <input id="radio-4" type="radio" name="playlist" value="4">
+                                    <label for="radio-4" tabindex="0">Рок</label>
+                                </div>
+                            </div>
+                            <div class="playlist__radio-group2">
+                                <div class="playlist__radio-btn">
+                                    <input id="radio-5"  type="radio" name="playlist" value="5">
+                                    <label for="radio-5" tabindex="0">Прогрессивный рок</label>
+                                </div>
+                                <div class="playlist__radio-btn">
+                                    <input id="radio-6" type="radio" name="playlist" value="6">
+                                    <label for="radio-6" tabindex="0">Электронная музыка</label>
+                                </div>
+                                <div class="playlist__radio-btn">
+                                    <input id="radio-7" type="radio" name="playlist" value="7">
+                                    <label for="radio-7" tabindex="0">Классическая музыка</label>
+                                </div>
+                                <div class="playlist__radio-btn">
+                                    <input id="radio-8" type="radio" name="playlist" value="8">
+                                    <label for="radio-8" tabindex="0">Звуки природы и шум города</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper2">
+                            <div class="swiper-wrapper playlist__radio-swiper">
+                                <div class="swiper-slide playlist__slider">
+                                    <button class="playlist__slider-btn btn">
+                                        Постпанк
+                                    </button>
+                                </div>
+                                <div class="swiper-slide playlist__slider">
+                                    <button class="playlist__slider-btn btn">
+                                        Хардкор
+                                    </button>
+                                </div>
+                                <div class="swiper-slide playlist__slider">
+                                    <button class="playlist__slider-btn">
+                                        Панк-рок
+                                    </button>
+                                </div>
+                                <div class="swiper-slide playlist__slider">
+                                    <button class="playlist__slider-btn btn">
+                                        Рок
+                                    </button>
+                                </div>
+                                <div class="swiper-slide playlist__slider  playlist__slider_long">
+                                    <button class="playlist__slider-btn playlist__slider-btn_long btn">
+                                        Прогрессивный рок
+                                    </button>
+                                </div>
+                                <div class="swiper-slide playlist__slider playlist__slider_long">
+                                    <button class="playlist__slider-btn playlist__slider-btn_long btn">
+                                        Электронная музыка
+                                    </button>
+                                </div>
+                                <div class="swiper-slide playlist__slider playlist__slider_long">
+                                    <button class="playlist__slider-btn playlist__slider-btn_long btn">
+                                        Классическая музыка
+                                    </button>
+                                </div>
+                                <div class="swiper-slide playlist__slider playlist__slider_long">
+                                    <button class="playlist__slider-btn playlist__slider-btn_long btn">
+                                        Звуки природы и шум города
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlist__discription">
+                            <p class="playlist__prim text">
+                                Раздел «Плейлисты» может содержать информацию,
+                                не предназначенную для несовершеннолетних
+                            </p>
+                            <p class="playlist__copy text">© 2021 l W-Wave</p>
+                            <div class="playlist__icon"></div>
+                        </div>
+                    </div>
+                    <ul class="playlist__card ul">
+                        <li class="playlist__card-item image-ru" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist1.png">
+                                <img src="img/playlist1.png" class="playlist__card-img" alt="Ploho">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">Ploho</h3>
+                                <p class="playlist__card-text text">
+                                    3 последних альбома
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-ru" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist2.png">
+                                <img src="img/playlist4.png" class="playlist__card-img" alt="Molchat Doma">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    Molchat Doma
+                                </h3>
+                                <p class="playlist__card-text text">Все песни</p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-ru" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist3.png">
+                                <img src="img/playlist7.png" class="playlist__card-img" alt="Motorama">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    Motorama
+                                </h3>
+                                <p class="playlist__card-text text">
+                                    Все синглы
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-ru" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist4.png">
+                                <img src="img/playlist10.png" class="playlist__card-img" alt="Human Tetris">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    Human Tetris
+                                </h3>
+                                <p class="playlist__card-text text">
+                                    3 последних альбома
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-ru" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist5.png">
+                                <img src="img/playlist2.png" class="playlist__card-img" alt="Буерак">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    Буерак
+                                </h3>
+                                <p class="playlist__card-text text">Все EP</p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-ru" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist6.png">
+                                <img src="img/playlist5.png" class="playlist__card-img" alt="Июльские Дни">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    Июльские Дни
+                                </h3>
+                                <p class="playlist__card-text text">
+                                    Альбом «Колокол»
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-eu" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist7.png">
+                                <img src="img/playlist8.png" class="playlist__card-img" alt="Joy Division">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    Joy Division
+                                </h3>
+                                <p class="playlist__card-text text">
+                                    Лучшее за всё время
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-eu" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist8.png">
+                                <img src="img/playlist11.png" class="playlist__card-img" alt="The Cure">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    The Cure
+                                </h3>
+                                <p class="playlist__card-text text">
+                                    Лучшее за всё время
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-eu" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist9.png">
+                                <img src="img/playlist3.png" class="playlist__card-img" alt="The Smiths">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    The Smiths
+                                </h3>
+                                <p class="playlist__card-text text">
+                                    Период 1984–1988
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-eu" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist10.png">
+                                <img src="img/playlist6.png" class="playlist__card-img" alt="New Order">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    New Order
+                                </h3>
+                                <p class="playlist__card-text text">Хиты</p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-eu" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist11.png">
+                                <img src="img/playlist9.png" class="playlist__card-img" alt="Bauhaus">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    Bauhaus
+                                </h3>
+                                <p class="playlist__card-text text">
+                                    Все синглы
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                        <li class="playlist__card-item image-eu" tabindex="0">
+                            <picture>
+                                <source media="(max-width: 1310px)" srcset="img/1024/playlist12.png">
+                                <img src="img/playlist12.png" class="playlist__card-img" alt="Gang Of Four">
+                            </picture>
+                            <div class="playlist__card-discription">
+                                <h3 class="playlist__card-header text">
+                                    Gang Of Four
+                                </h3>
+                                <p class="playlist__card-text text">
+                                    3 последних альбома
+                                </p>
+                                <button class="playlist__card-btn"></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="playlist__discription-before">
+                        <p class="playlist__prim text">
+                            Раздел «Плейлисты» может содержать информацию,
+                            не предназначенную для несовершеннолетних
+                        </p>
+                        <p class="playlist__copy text">© 2021 l W-Wave</p>
+                        <div class="playlist__icon"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="adv">
+                <div class="container adv__container">
+                    <picture class="adv__img">
+                        <source media="(max-width: 440px)" srcset="img/mobile/wave.png">
+                        <source media="(max-width: 992px)" srcset="img/768/adv_radio.png" >
+                        <source media="(max-width: 1310px)" srcset="img/1024/wave.png">
+                        <img src="img/adv_wave.png" alt="Поративный раиодприемкник-колонка W-Wave.10 xm" class="adv__img-wave img">
+                    </picture>
+                    <div class="adv__discription">
+                        <h2 class="adv__header text">
+                            Будь с нами на одной волне!
+                        </h2>
+                        <p class="adv__text1 text">
+                            Друзья, рады представить вам продукт нашего
+                            производства! Да-да, несмотря на то, что мы только
+                            начали свой путь радиовещателей, нам хочется,
+                            чтобы вы могли как следует нас расслышать:)
+                        </p>
+                        <p class="adv__text2 text">
+                            Итак, встречайте! Портативный радиоприёмник-колонка
+                            W-Wave 1.0 xm. Тщательный подбор всех делатей,
+                            ручная сборка, качественный звук. Пока доступно
+                            только 60 штук в 3 цветах, но мы активно трудимся
+                            над новыми партиями и дизайном. Спешите приобрести!
+                        </p>
+                        <p class="adv__price text">2 800 ₽</p>
+                        <a href="https://market.yandex.ru/product--radiopriemnik-s-bluetooth-max-mr-361-red-radio-drevesnyi-korpus-am-fm-sw-usb/815358055?text=радиоприемник%20колонка&cpc=IM8b5whEfpVG2pkQGuoDHWVOU-bNwStAAWLBo3rkMhuuEY3A-11NxprrneaXdr-G719facfmj2CUfN-WhRFDeU4irCug1dzKyF2LHMU6YuuA_qCKiL7XMi87x2pRd8sLZRXb2aX08UHcUeE2Vs-gjROzq1iBHFSd2AauaRT-NqaNx9Id-zp5ww%2C%2C&rs=eJwzMglgrGLh2HSYdRaj5sWGCxsubLmw48K-C_uB7B0Xtl7Yc2EvkN6lcGEXUHA3EO8FsjYAACNAIec%2C&sku=101165443135&do-waremd5=7Dv6d1FKtE426naI8-SCkQ&sponsored=1&cpa=1&nid=26992430"
+                            class="adv__link t-d">
+                            Купить на Яндекс.Маркет
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about__article">
+                        <h2 class="about__header text">О нас</h2>
+                        <h3 class="about__slogan text">
+                            Приём-приём! Как слышно? Мы уже в эфире? Отлично,
+                            поехали!
+                        </h3>
+                        <p class="about__discription text">
+                            Друзья, мы будем очень рады, если вы поможете стать
+                            нам лучше. Нам важен каждый слушатель, поэтому
+                            вы можете поделиться обратной связью о наших
+                            предеачах, темах, подборках и вообще обо всём!
+                            Это можно сделать либо написав нам в форме ниже,
+                            либо кликнув на наши соцсети в подвале сайта.
+                            Спасибо! Услышимся!:)
+                        </p>
+                    </div>
+                    <div class="about__swiper">
+                        <div class="swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide about__card">
+                                    <picture>
+                                        <source media="(max-width: 530px)" srcset="img/mobile/AB1.png">
+                                        <source media="(max-width: 825px)" srcset="img/768/about1.png">
+                                        <source media="(max-width: 1065px)" srcset="img/1024/about1.png">
+                                        <img src="img/about1.png" class="about__slider-img img" alt="Дмитрий Гутенберг">
+                                    </picture>
+                                    <h3 class="about__author text">
+                                        Дмитрий Гутенберг
+                                    </h3>
+                                    <p class="about__text text">
+                                        Эксперт (ну, почти) по всем вопросам (почти)
+                                    </p>
+                                </div>
+                                <div class="swiper-slide about__card">
+                                    <picture>
+                                        <source media="(max-width: 530px)" srcset="img/mobile/ab2.png">
+                                        <source media="(max-width: 825px)" srcset="img/768/about2.png">
+                                        <source media="(max-width: 1065px)" srcset="img/1024/about2.png">
+                                        <img src="img/about2.png" class="about__slider-img img" alt="Анна Васильева">
+                                    </picture>
+                                    <h3 class="about__author text">
+                                        Анна Васильева
+                                    </h3>
+                                    <p class="about__text text">
+                                        Как я здесь оказалась? А главное — зачем?
+                                    </p>
+                                </div>
+                                <div class="swiper-slide about__card">
+                                    <picture>
+                                        <source media="(max-width: 530px)" srcset="img/768/about3.png" style="width: 112px;">
+                                        <source media="(max-width: 825px)" srcset="img/768/about3.png">
+                                        <source media="(max-width: 1065px)" srcset="img/1024/about3.png">
+                                        <img src="img/about3.png" class="about__slider-img img" alt="Пётр Дмитриевский">
+                                    </picture>
+                                    <h3 class="about__author text">
+                                        Пётр Дмитриевский
+                                    </h3>
+                                    <p class="about__text text">
+                                        Господа! Внимание! Благодарю за внимание!
+                                    </p>
+                                </div>
+                                <div class="swiper-slide about__card">
+                                    <picture>
+                                        <source media="(max-width: 530px)" srcset="img/mobile/ab4.png">
+                                        <source media="(max-width: 825px)" srcset="img/768/about4.png">
+                                        <source media="(max-width: 1065px)" srcset="img/1024/about4.png">
+                                        <img src="img/about4.png" class="about__slider-img img" alt="Татьяна Флеганова">
+                                    </picture>
+                                    <h3 class="about__author text">
+                                        Татьяна Флеганова
+                                    </h3>
+                                    <p class="about__text text">
+                                        Одна я в пальто стою красивая, а вокруг…
+                                    </p>
+                                </div>
+                                <div class="swiper-slide about__card">
+                                    <picture>
+                                        <source media="(max-width: 530px)" srcset="img/mobile/ab5.png">
+                                        <source media="(max-width: 825px)" srcset="img/768/about5.png">
+                                        <source media="(max-width: 1065px)" srcset="img/1024/about5.png">
+                                        <img src="img/about5.png" class="about__slider-img img" alt="Фёдор Прокопьев">
+                                    </picture>
+                                    <h3 class="about__author text">
+                                        Фёдор Прокопьев
+                                    </h3>
+                                    <p class="about__text text">
+                                        Привет! Я фотограф, музыкант, ведущий
+                                    </p>
+                                </div>
+                                <div class="swiper-slide about__card">
+                                    <picture>
+                                        <source media="(max-width: 530px)" srcset="img/mobile/ab6.png">
+                                        <source media="(max-width: 825px)" srcset="img/768/about6.png">
+                                        <source media="(max-width: 1065px)" srcset="img/1024/about6.png">
+                                        <img src="img/about6.png" class="about__slider-img img" alt="Светлана Кортнева">
+                                    </picture>
+                                    <h3 class="about__author text">
+                                        Светлана Кортнева
+                                    </h3>
+                                    <p class="about__text text">
+                                        Художник-оформитель. Оформляю
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-btn">
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+
+
+
+                    <form class="about__form" name="about-form" action="send.php" method="POST">
+                        <fieldset class="about__form-fieldset fldst">
+                            <label for="message" class="label-area">
+                                <textarea class="about__form-input about__form-input_textarea" required
+                                    id="message"
+                                    name="message"
+                                    placeholder="Что скажете?"
+                                    rows="4"
+                                    data-validate-field="message"></textarea>
+                            </label>
+                            <label for="name" class="label">
+                                <input class="about__form-input about__form-input_1"
+                                    id="name"
+                                    name="name"
+                                    type="text"  required
+                                    placeholder="Имя"
+                                    aria-label="Обязательное поле для заполнения"
+                                    data-validate-field="name">
+                            </label>
+                            <label for="email" class="label">
+                                <input class="about__form-input about__form-input_2"
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    required placeholder="Email"
+                                    aria-label="Обязательное поле для заполнения"
+                                    data-validate-field="mail">
+                            </label>
+                            <button
+                                class="about__form-btn btn"
+                                id="send-data"
+                                type="submit"
+                                value="">
+                                Отправить
+                            </button>
+                            <div class="about__form-check">
+                                <input
+                                    class="about__form-checkbox"
+                                    type="checkbox"
+                                    id="data-check"
+                                    name="data_check"
+                                    checked>
+                                <label
+                                    class="about__form-label"
+                                    for="data-check">
+                                    Согласен на обработку персональных данных
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__logo-social">
+                    <img src="img/footer_logo.svg" class="footer__logo img" alt="Логотип">
+                    <ul class="footer__icons ul">
+                        <li class="footer__icon">
+                            <a href="" class="footer__link icon-yt t-d" aria-label="Ютуб"></a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="" class="footer__link icon-ok t-d" aria-label="Одноклассники"></a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="" class="footer__link icon-vk-footer t-d" aria-label="Вконтакте"></a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list ul">
+                        <li class="footer__nav-item">
+                            <a href="#podcast" class="footer__nav-link t-d">Подкасты</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#broadcast" class="footer__nav-link t-d">Передачи</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#guest" class="footer__nav-link t-d">Гости</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list ul">
+                        <li class="footer__nav-item">
+                            <a href="#playlist" class="footer__nav-link t-d">Плейлисты</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link t-d">Сетка</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#about" class="footer__nav-link t-d">О нас</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list ul">
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link t-d">Новости</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link t-d">Блоги</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link t-d">Топы</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="footer__nav footer__nav_mobile">
+                    <ul class="footer__nav-list footer__nav-list_mobile ul">
+                        <li class="footer__nav-item">
+                            <a href="#podcast" class="footer__nav-link t-d">Подкасты</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#broadcast" class="footer__nav-link t-d">Передачи</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#guest" class="footer__nav-link t-d">Гости</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#playlist" class="footer__nav-link t-d">Плейлисты</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link t-d">Сетка</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list footer__nav-list_mobile ul">
+                        <li class="footer__nav-item">
+                            <a href="#about" class="footer__nav-link t-d">О нас</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link t-d">Новости</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link t-d">Блоги</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link t-d">Топы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer__text text">W-WAVE ® 2021</p>
+        </footer>
+    </body>
+</html>
