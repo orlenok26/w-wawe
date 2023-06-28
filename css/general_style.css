@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --black: #121723;
+  --purple: #6d31ee;
+  --light_purple: #AA9DFA;
+  --grey: #a1a6b4;
+  --light_grey: #d2d5dd;
+  --dark_white: #e6e8ec;
+  --mustard: #bb973e;
+  --beige: #f0d288;
+  --plum: #4f28a5;
+  --barley: #f5f6f7;
+  --white: #ffffff;
+  --grey_dark: #f2f2f2;
+  --bell: #aa9dfa;
+  --blue_purple:#6D31EE;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.t-d {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.ul,
+.ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.w-wawe {
+  font-family: "Muller", sans-serif;
+  background-color: var(--white);
+  min-width: 320px;
+}
+
+.text {
+  margin: 0;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+}
+
+
+.fldst {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.container {
+  max-width: 1306px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding: 0 98px;
+}
+
+@media (max-width:1310px) {
+  .container {
+    /* max-width: 1180px; */
+    padding: 0 98px;
+  }
+}
+
+@media (max-width:992px) {
+  .container {
+    padding: 0 114px
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    padding: 0 31px;
+  }
+}
+/*
+@media (max-width: 1065px) {
+  .container {
+    /* max-width: 824px; */
+      /* max-width: 925px; */
+      /* padding: 0px 50px; */
+    /*}
+}
+
+
+@media (max-width: 850px) {
+  .container {
+    /* max-width: 540px; */
+ /* }
+}
+
+@media (max-width: 530px){
+  .container {
+    /* max-width: 480px; */
+ /* }
+}
+
+@media (max-width: 440px) {
+  .container {
+    /* max-width: 256px; */
+    /*padding: 0px 15px;
+  }
+} */

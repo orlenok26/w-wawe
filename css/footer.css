@@ -1,0 +1,329 @@
+.footer {
+  position: relative;
+  padding: 92px 0px 10px 0px;
+  background-color:  #292E39;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 11px;
+  background-image: url('../img/footer_wave.svg');
+  top: 273px;
+  left: -8px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 95px;
+}
+
+.footer__logo {
+  width: 160px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 114px;
+}
+
+.footer__link {
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.icon-yt {
+  background-image: url('../img/yt.svg');
+  width: 23px;
+  height: 20px;
+  -webkit-transition: background-image .3s ease-in-out;
+  -o-transition: background-image .3s ease-in-out;
+  transition: background-image .3s ease-in-out;
+}
+
+.icon-yt:hover {
+  background-image: url('../img/yt_hover.svg');
+}
+
+.icon-yt:focus {
+  background-image: url('../img/yt_focus.svg');
+  outline: none;
+}
+
+.icon-yt:active {
+  background-image: url('../img/yt_active.svg');
+}
+
+.icon-ok {
+  background-image: url('../img/odnkl.svg');
+  width: 23px;
+  height: 23px;
+}
+
+.icon-ok:hover {
+  background-image: url('../img/ok_hover.svg');
+}
+
+.icon-ok:focus {
+  background-image: url('../img/ok_focus.svg');
+  outline: none;
+}
+
+.icon-ok:active {
+  background-image: url('../img/ok_active.svg');
+}
+
+.icon-vk-footer {
+  background-image: url('../img/vk.svg');
+  width: 23px;
+  height: 23px;
+  margin-top: 1px;
+}
+
+.icon-vk-footer:hover {
+  background-image:url('../img/vk_hover.svg');
+}
+
+.icon-vk-footer:focus {
+  background-image: url('../img/vk_focus.svg');
+  outline: none;
+}
+
+.icon-vk-footer:active {
+  background-image: url('../img/vk_active.svg');
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__nav-list:not(:last-child) {
+  margin-right: 109px;
+}
+
+.footer__nav-item {
+  margin-bottom: 17px;
+}
+
+.footer__nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--white);
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.footer__nav-link:hover {
+  color: var(--purple);
+}
+
+.footer__nav-link:focus {
+  color: var(--white);
+  outline: none;
+  background-color: var(--light_purple);
+}
+
+.footer__nav-link:active {
+  color: var(--plum);
+  background-color: transparent;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 103.34%;
+  color: var(--grey);
+  text-align: center;
+}
+
+.footer__nav_mobile {
+  display: none;
+}
+
+@media (max-width: 1310px) {
+  .footer::before {
+      top: 274px;
+      left: -19px;
+  }
+
+  .footer__nav_mobile {
+    display: none;
+  }
+}
+
+/* @media (max-width: 992px) {
+  .footer__nav {
+    gap: 100px;
+    width: 66%;
+  }
+
+  .footer__nav-list:not(:last-child) {
+    margin-right: 0;
+  }
+
+
+} */
+
+@media (max-width: 992px) {
+  .footer__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+  }
+
+  .icon-yt {
+      background-image: url('../img/768/yt.svg');
+      width: 35px;
+      height: 30px;
+  }
+
+  .icon-yt:hover {
+      background-image: url('../img/768/yt_hover.svg');
+  }
+
+  .icon-yt:focus {
+      background-image: url('../img/768/yt_focus.svg');
+  }
+
+  .icon-yt:active {
+      background-image: url('../img/768/yt_active.svg');
+  }
+
+  .icon-ok {
+      background-image: url('../img/768/ok.svg');
+      width: 35px;
+      height: 35px;
+  }
+
+  .icon-ok:hover {
+      background-image: url('../img/768/ok_hover.svg');
+  }
+
+  .icon-ok:focus {
+      background-image: url('../img/768/ok_focus.svg');
+  }
+
+  .icon-ok:active {
+      background-image: url('../img/768/ok_active.svg');
+  }
+
+  .icon-vk-footer {
+      background-image: url('../img/768/vk.svg');
+      width: 35px;
+      height: 35px;
+  }
+
+  .icon-vk-footer:hover {
+      background-image: url('../img/768/vk_hover.svg');
+  }
+
+  .icon-vk-footer:focus {
+      background-image: url('../img/768/vk_focus.svg');
+  }
+
+  .icon-vk-footer:active {
+      background-image: url('../img/768/vk_active.svg');
+  }
+
+  .footer__icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      max-width: 160px;
+  }
+
+  .footer__logo {
+      margin-bottom: 22px;
+  }
+
+  .footer__logo-social {
+      margin-bottom: 73px;
+  }
+
+  .footer__nav-item {
+      margin-bottom: 27px;
+  }
+
+  .footer::before {
+      top: 436px;
+      left: -14px;
+  }
+
+  .footer__container {
+      margin-bottom: 73px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 50px 0 10px 0;
+  }
+
+  .footer__nav-link {
+      font-size: 12px;
+      line-height: 12px;
+  }
+
+  .footer__nav {
+      display: none;
+  }
+
+  .footer__nav-item {
+      margin-bottom: 18px;
+  }
+
+  .footer__nav_mobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 256px;
+  }
+
+  .footer__nav-list_mobile:first-child {
+      margin-right: 78px;
+  }
+
+  .footer::before {
+      background-image: url('../img/mobile/footer_wave.svg');
+      top: 406px;
+      left: -1px;
+  }
+
+  .footer__container {
+      margin-bottom: 37px;
+  }
+
+  .footer__text {
+      font-size: 12px;
+      line-height: 103.34%;
+  }
+
+}
