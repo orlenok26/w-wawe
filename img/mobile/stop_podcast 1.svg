@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="36px" viewBox="0 0 36 36" version="1.1">
+<g id="surface1">
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(63.137255%,65.098039%,70.588235%);stroke-opacity:1;stroke-miterlimit:4;" d="M 44 24 C 44 35.046875 35.046875 44 24 44 C 12.953125 44 4 35.046875 4 24 C 4 12.953125 12.953125 4 24 4 C 35.046875 4 44 12.953125 44 24 Z M 44 24 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(63.137255%,65.098039%,70.588235%);fill-opacity:1;" d="M 15 11.25 C 15.414062 11.25 15.75 11.585938 15.75 12 L 15.75 24 C 15.75 24.414062 15.414062 24.75 15 24.75 C 14.585938 24.75 14.25 24.414062 14.25 24 L 14.25 12 C 14.25 11.585938 14.585938 11.25 15 11.25 Z M 15 11.25 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(63.137255%,65.098039%,70.588235%);fill-opacity:1;" d="M 21 11.25 C 21.414062 11.25 21.75 11.585938 21.75 12 L 21.75 24 C 21.75 24.414062 21.414062 24.75 21 24.75 C 20.585938 24.75 20.25 24.414062 20.25 24 L 20.25 12 C 20.25 11.585938 20.585938 11.25 21 11.25 Z M 21 11.25 "/>
+</g>
+</svg>
